@@ -1,5 +1,5 @@
 <p>
-  <img src="ITC.gif" alt="Alt text" style="float: left; width: 100px; margin-right: 20px;">
+  <img src="ITC.gif" alt="Alt text" style="float: left; width: 220px; margin-right: 20px;">
 Name: Virak Rith
 
 Student ID: P20230033
