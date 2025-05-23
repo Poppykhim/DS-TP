@@ -30,7 +30,7 @@ void addProductToBegin(ListProduct* ls, string name, string id, double price) {
     p->price = price;
     p->next = ls->head;
     ls->head = p;
-    if (ls->tail == nullptr) {
+    if (ls->tail == 0) {
         ls->tail = p;
     }
     ls->n++;
@@ -44,7 +44,7 @@ void addProductToEnd(ListProduct* ls, string name, string id, double price) {
     p->id = id;
     p->price = price;
     p->next = nullptr;
-    if (ls->tail == nullptr) {
+    if (ls->tail == 0) {
         ls->head = p;
     } else {
         ls->tail->next = p;
@@ -101,6 +101,7 @@ void searchbyName(ListProduct* ls, string name){
             cout << "Product found: " << current->name << ", ID: " << current->id << ", Price: " << current->price << endl;
             return;
         }
+        current = current->next;
     }
 }
 vector<Product*> lower,higher;
